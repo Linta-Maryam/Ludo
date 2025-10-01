@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Ludo 2077</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  
+  <div class="header">
+    <h1>MidNight Ludo</h1>
+    <button class="floating-toggle" id="floatingToggle">Disable Float</button>
+  </div>
+  
+ <div class="game-container">
+  <div class="board-container" id="boardContainer">
+    <div class="board" id="board">
+      <!-- House cells -->
+      <div class="cell red-house"></div>
+      <div class="cell green-house"></div>
+      <div class="cell yellow-house"></div>
+      <div class="cell blue-house"></div>
+      <div class="cell center-square">FINISH</div>
+      <!-- Path cells will be appended by script -->
+    </div>
+  </div>
+
+  <!-- Control panel (current player + dice) -->
+  <div class="control-panel">
+    <div class="player-info" id="playerInfo">
+      Current Player: <span id="currentPlayerName">Red</span>
+    </div>
+    <div class="dice-container">
+      <div class="dice-wrapper">
+        <div class="dice" id="dice">1</div>
+      </div>
+      <button class="dice-button" id="rollDice">Roll Dice</button>
+      
+    </div>
+    
+  </div>
+
+  <!-- Scoreboard -->
+  <div class="scoreboard" id="scoreboard">
+    <h2>GALACTIC LEADERBOARD</h2>
+    <div class="player-scores" id="playerScores"></div>
+    <div class="game-messages" id="gameMessages"></div>
+  </div>
+</div>
+
+
+  
+  
+ 
+  
+  <div class="footer">
+    Neon Ludo 2077 | Cyber-Enhanced Gaming Experience
+  </div>
+  <script src="Script.js"></script>
+
+</body>
+</html>
